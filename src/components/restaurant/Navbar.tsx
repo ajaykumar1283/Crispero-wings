@@ -40,12 +40,12 @@ const Navbar = () => {
           </span>
         </div>
 
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-10">
           {navLinks.map((link) => (
             <button
               key={link.name}
               onClick={() => handleNavClick(link.href)}
-              className="nav-link"
+              className="nav-link hover:drop-shadow-[0_0_8px_hsl(var(--primary)/0.5)]"
             >
               {link.name}
             </button>
