@@ -1,3 +1,5 @@
+import { Instagram, Facebook } from 'lucide-react';
+
 const Footer = () => {
   const scrollToSection = (href: string) => {
     const el = document.querySelector(href);
@@ -23,7 +25,7 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Right – Links & Contact */}
+          {/* Right – Links, Social & Contact */}
           <div className="md:text-right">
             <div className="flex flex-wrap gap-6 md:justify-end mb-6">
               {['Home', 'Menu', 'About', 'Contact'].map((link) => (
@@ -36,6 +38,29 @@ const Footer = () => {
                 </button>
               ))}
             </div>
+
+            {/* Social Media */}
+            <div className="flex gap-5 mb-6 md:justify-end">
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-foreground hover:text-primary hover:drop-shadow-[0_0_8px_hsl(var(--primary)/0.5)] transition-all duration-300 hover:scale-110"
+                aria-label="Instagram"
+              >
+                <Instagram size={22} />
+              </a>
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-foreground hover:text-primary hover:drop-shadow-[0_0_8px_hsl(var(--primary)/0.5)] transition-all duration-300 hover:scale-110"
+                aria-label="Facebook"
+              >
+                <Facebook size={22} />
+              </a>
+            </div>
+
             <div className="text-muted-foreground font-body text-sm space-y-1">
               <p>
                 <a href="tel:3349124151" className="hover:text-primary transition-colors">(334) 912-4151</a>
