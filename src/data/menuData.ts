@@ -19,10 +19,10 @@ export const menuCategories: MenuCategory[] = [
     type: 'cards',
     note: 'Regular | Boneless',
     items: [
-      { name: '6 pcs (1 flavor)', price: '$6.49 | $9.49' },
-      { name: '10 pcs (1 flavor)', price: '$10.49 | $12.99' },
-      { name: '15 pcs (2 flavors)', price: '$15.99 | $17.99' },
-      { name: '20 pcs (2 flavors)', price: '$19.99 | $21.99' },
+      { name: '6 pcs (1 flavor) | Combo', price: '$6.49 | $9.49' },
+      { name: '10 pcs (1 flavor) | Combo', price: '$10.49 | $12.99' },
+      { name: '15 pcs (2 flavors) | Combo ', price: '$15.99 | $17.99' },
+      { name: '20 pcs (2 flavors) | Combo', price: '$19.99 | $21.99' },
       { name: '30 pcs', price: '$29.99' },
       { name: '50 pcs', price: '$49.99' },
       { name: '75 pcs', price: '$70.99' },
@@ -54,29 +54,49 @@ export const menuCategories: MenuCategory[] = [
       { name: 'Sweet Chilli', price: '' },
     ],
   },
+  // {
+  //   id: 'all-combo',
+  //   name: 'All Combo',
+  //   type: 'cards',
+  //   items: [
+  //     { name: 'Cheese Fries', price: '+$1.99' },
+  //     { name: 'Bacon Cheese Fries', price: '+$3.99' },
+  //     { name: 'Fried Okra', price: '+$1.99' },
+  //     { name: 'Onion Ring', price: '+$1.99' },
+  //     { name: 'Veggie Fried Rice', price: '+$1.99' },
+  //     { name: 'Chicken Fried Rice', price: '+$3.99' },
+  //     { name: 'Beef Fried Rice', price: '+$3.99' },
+  //     { name: 'Shrimp Fried Rice', price: '+$3.39' },
+  //   ],
+  // },
+
   {
-    id: 'all-combo',
-    name: 'All Combo',
-    type: 'cards',
-    items: [
-      { name: 'Cheese Fries', price: '+$1.99' },
-      { name: 'Bacon Cheese Fries', price: '+$3.99' },
-      { name: 'Fried Okra', price: '+$1.99' },
-      { name: 'Onion Ring', price: '+$1.99' },
-      { name: 'Veggie Fried Rice', price: '+$1.99' },
-      { name: 'Chicken Fried Rice', price: '+$3.99' },
-      { name: 'Beef Fried Rice', price: '+$3.99' },
-      { name: 'Shrimp Fried Rice', price: '+$3.39' },
-    ],
-  },
+  id: 'all-combo',
+  name: 'All Combo',
+  type: 'cards',
+  items: [
+    { name: 'Cheese Fries', price: '+$1.99' },
+    { name: 'Bacon Cheese Fries', price: '+$3.99' },
+    { name: 'Fried Okra', price: '+$1.99' },
+    { name: 'Onion Ring', price: '+$1.99' },
+
+    { name: 'Veggie Fried Rice', price: '+$1.99' },
+    { name: 'Egg Fried Rice', price: '+$2.99' },   // NEW
+    { name: 'Chicken Fried Rice', price: '+$3.99' },
+    { name: 'Beef Fried Rice', price: '+$3.99' },
+    { name: 'Shrimp Fried Rice', price: '+$3.39' },
+
+    { name: 'Corn Nuggets (x10)', price: '+$2.99' } // NEW
+  ],
+},
   {
     id: 'fried-fish',
     name: 'Fried Fish',
     type: 'cards',
     items: [
-      { name: '1 pc', price: '$3.99 | $6.99 | $10.99' },
-      { name: '2 pcs', price: '$6.99 | $9.99 | $13.99' },
-      { name: '3 pcs', price: '$9.99 | $12.99 | $15.99' },
+      { name: '1 pc | 1 pc Combo | 1 pc + 5 wings', price: '$3.99 | $6.99 | $10.99' },
+      { name: '2 pcs | 2 pc Combo | 2 pc + 5 wings', price: '$6.99 | $9.99 | $13.99' },
+      { name: '3 pcs | 3 pc Combo | 3 pc + 5 wings', price: '$9.99 | $12.99 | $15.99' },
     ],
   },
   {
@@ -84,12 +104,12 @@ export const menuCategories: MenuCategory[] = [
     name: 'Fried Rice',
     type: 'cards',
     items: [
-      { name: 'Veggie', price: '$3.99 | $5.99' },
-      { name: 'Egg', price: '$4.99 | $6.99' },
-      { name: 'Chicken', price: '$5.99 | $7.99' },
-      { name: 'Beef', price: '$5.99 | $8.99' },
-      { name: 'Shrimp', price: '$6.99 | $9.99' },
-      { name: 'Crispero Special Mix Meat', price: '$7.99 | $10.99' },
+      { name: 'Veggie SM | LR', price: '$3.99 | $5.99' },
+      { name: 'Egg SM | LR', price: '$4.99 | $7.99' },
+      { name: 'Chicken  SM | LR ', price: '$5.99 | $8.99' },
+      { name: 'Beef  SM | LR', price: '$5.99 | $8.99' },
+      { name: 'Shrimp  SM | LR', price: '$6.99 | $9.99' },
+      { name: 'Crispero Special Mix Meat  SM | LR', price: '$9.99 | $12.99' },
     ],
   },
   {
@@ -111,8 +131,8 @@ export const menuCategories: MenuCategory[] = [
     type: 'cards',
     note: 'Only | Combo',
     items: [
-      { name: 'Grilled Chicken', price: '$6.99 | $9.49' },
-      { name: 'Fried Chicken', price: '$6.99 | $9.49' },
+      { name: 'Grilled Chicken | Grilled Chicken + Combo', price: '$6.99 | $9.49' },
+      { name: 'Fried Chicken | Fried Chicken + Combo', price: '$6.99 | $9.49' },
     ],
   },
   {
@@ -120,9 +140,9 @@ export const menuCategories: MenuCategory[] = [
     name: 'Philly',
     type: 'cards',
     items: [
-      { name: 'Philly Only', price: '$5.99' },
-      { name: 'Philly Combo', price: '$9.49' },
-      { name: 'Philly Combo + 5 Wings', price: '$13.99' },
+      { name: 'ChickenPhilly | ChickenPhilly + Combo | ChickenPhilly + 5 wings', price: '$6.99 | $9.99 | $13.99 ' },
+      { name: 'SteakPhilly | steakPhilly + Combo | steakPhilly + 5 wings', price: '$6.99 | $9.99 | $13.99' },
+      { name: 'ShrimpPhilly | shrimpPhilly + Combo | shrimpPhilly + 5 wings', price: '$6.99 | $9.99 |13.99 ' },
     ],
   },
   {
@@ -131,9 +151,9 @@ export const menuCategories: MenuCategory[] = [
     type: 'cards',
     note: 'Only | Combo',
     items: [
-      { name: '2 pcs', price: '$3.99 | $6.99' },
-      { name: '4 pcs', price: '$6.99 | $8.99' },
-      { name: '6 pcs', price: '$8.99 | $10.99' },
+      { name: '2 pcs | 2 pcs + Combo', price: '$3.99 | $6.99' },
+      { name: '4 pcs | 4 pcs + Combo', price: '$6.99 | $8.99' },
+      { name: '6 pcs | 6 pcs + Combo', price: '$8.99 | $10.99' },
     ],
   },
   {
@@ -142,12 +162,12 @@ export const menuCategories: MenuCategory[] = [
     type: 'cards',
     note: 'Small | Large',
     items: [
-      { name: 'French Fries', price: '$2.49 | $4.49' },
-      { name: 'Cheese Fries', price: '$3.49 | $5.49' },
-      { name: 'Bacon Cheese Fries', price: '$4.49 | $6.99' },
-      { name: 'Fried Okra', price: '$3.49 | $5.49' },
-      { name: 'Onion Ring', price: '$3.49 | $5.49' },
-      { name: 'Corn Nugget (x10)', price: '$3.29' },
+      { name: 'French Fries SM | LR', price: '$2.49 | $4.49' },
+      { name: 'Cheese Fries SM | LR', price: '$3.49 | $5.49' },
+      { name: 'Bacon Cheese Fries SM | LR', price: '$4.49 | $6.99' },
+      { name: 'Fried Okra SM | LR', price: '$3.49 | $5.49' },
+      { name: 'Onion Ring SM | LR', price: '$3.49 | $5.49' },
+      { name: 'Corn Nugget (x10) SM | LR', price: '$3.29' },
     ],
   },
   {
@@ -155,9 +175,10 @@ export const menuCategories: MenuCategory[] = [
     name: 'Crispero Bowls',
     type: 'bowls',
     items: [
-      { name: 'Original Chicken', price: '$9.99' },
+      { name: 'Chicken', price: '$9.99' },
       { name: 'Fried Chicken', price: '$9.99' },
-      { name: 'Beef', price: '$11.99' },
+      { name: 'Beef', price: '$12.99' },
+      { name: 'Shrimp', price: '$12.99' },
     ],
     extras: [
       'Rice', 'Salad', 'Fries', 'Walking Taco',
@@ -169,9 +190,9 @@ export const menuCategories: MenuCategory[] = [
     type: 'cards',
     note: 'Only | Combo',
     items: [
-      { name: '5 pcs', price: '$4.49 | $7.99' },
-      { name: '10 pcs', price: '$8.49 | $11.49' },
-      { name: '15 pcs', price: '$10.49 | $13.99' },
+      { name: '5 pcs | 5 Pcs + Combo', price: '$4.49 | $7.99' },
+      { name: '10 pcs | 10 pcs + Combo', price: '$8.49 | $11.49' },
+      { name: '15 pcs | 15 pcs +  Combo', price: '$10.49 | $13.99' },
     ],
   },
   {
@@ -180,8 +201,8 @@ export const menuCategories: MenuCategory[] = [
     type: 'cards',
     note: 'Only | Combo',
     items: [
-      { name: '6 pcs', price: '$6.49 | $8.99' },
-      { name: '10 pcs', price: '$9.49 | $11.49' },
+      { name: '6 pcs | 6 pcs + Combo', price: '$6.49 | $8.99' },
+      { name: '10 pcs | 10 pcs + Combo', price: '$9.49 | $11.49' },
     ],
   },
   {
@@ -190,9 +211,9 @@ export const menuCategories: MenuCategory[] = [
     type: 'cards',
     note: 'Small $1.49 | Large $2.29',
     items: [
-      { name: 'Fruit Punch', price: '$1.49 | $2.29' },
-      { name: 'Peach', price: '$1.49 | $2.29' },
-      { name: 'Lemonade', price: '$1.49 | $2.29' },
+      { name: 'Fruit Punch  SM | LR', price: '$1.49 | $2.29' },
+      { name: 'Peach SM | LR', price: '$1.49 | $2.29' },
+      { name: 'Lemonade SM | LR', price: '$1.49 | $2.29' },
     ],
   },
   {
