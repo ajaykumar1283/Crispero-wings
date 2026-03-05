@@ -104,7 +104,7 @@ export const menuCategories: MenuCategory[] = [
     name: 'Fried Rice',
     type: 'cards',
     items: [
-      { name: 'Veggie SM | LR', price: '$3.99 | $5.99' },
+      { name: 'Veggie SM | LR', price: '$3.99 | $6.99' },
       { name: 'Egg SM | LR', price: '$4.99 | $7.99' },
       { name: 'Chicken  SM | LR ', price: '$5.99 | $8.99' },
       { name: 'Beef  SM | LR', price: '$5.99 | $8.99' },
