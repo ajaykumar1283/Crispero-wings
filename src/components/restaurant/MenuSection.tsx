@@ -4,7 +4,7 @@ import cornNuggets from '@/assets/corn-nuggets.jpg';
 
 import wingsImg from '@/assets/wings.jpg';
 import burgerImg from '@/assets/burger.jpg';
-import fishImg from '@/assets/fish.jpg';
+import fishImg from '@/assets/new/fried-fish.jpeg';
 import shrimpImg from '@/assets/shrimp.jpg';
 import bowlImg from '@/assets/bowl.jpg';
 import friesImg from '@/assets/fries.jpg';
@@ -18,51 +18,51 @@ import beefImg from '@/assets/beef.jpg';
 
 /* SIDE ORDERS */
 
-import cheeseFries from '@/assets/cheese-fries.jpg';
-import baconCheeseFries from '@/assets/bacon-cheese-fries.jpg';
-import friedOkra from '@/assets/fried-okra.jpg';
-import onionRings from '@/assets/onion-rings.jpg';
+import cheeseFries from '@/assets/new/for-cheese-fries.jpeg';
+import baconCheeseFries from '@/assets/new/bacon-cheese-fries.jpeg';
+import friedOkra from '@/assets/new/fried-okra.jpeg';
+import onionRings from '@/assets/new/onion-rings.jpeg';
 
 /* FRIED RICE */
 
-import veggieFriedRice from '@/assets/veggie-fried-rice.jpg';
-import eggFriedRice from '@/assets/egg-fried-rice.jpg';
-import chickenFriedRice from '@/assets/chicken-fried-rice.jpg';
-import beefFriedRice from '@/assets/beef-fried-rice.jpg';
-import shrimpFriedRice from '@/assets/shrimp-fried-rice.jpg';
-import mixFriedRice from '@/assets/crispero-mix-fried-rice.jpg';
+import veggieFriedRice from '@/assets/new/veg-fried-rice.jpeg';
+import eggFriedRice from '@/assets/new/egg-fried-rice.jpeg';
+import chickenFriedRice from '@/assets/new/chiken-fried rice.jpeg';
+import beefFriedRice from '@/assets/new/beef-fried-rice.jpeg';
+import shrimpFriedRice from '@/assets/new/shrimp-fried-rice.jpeg';
+import mixFriedRice from '@/assets/new/mix-meat-fried-rice.jpeg';
 
 /* SANDWICH */
 
-import grilledChickenSandwich from '@/assets/grilled-chicken-sandwich.jpg';
-import friedChickenSandwich from '@/assets/fried-chicken-sandwich.jpg';
+import grilledChickenSandwich from '@/assets/new/grilled-chiken-sanwich.jpeg';
+import friedChickenSandwich from '@/assets/new/fried-chiken-sandwich.jpeg';
 
 /* PHILLY */
 
-import phillyOnly from '@/assets/philly-only.jpg';
-import phillyCombo from '@/assets/philly-combo.jpg';
-import phillyWingsCombo from '@/assets/philly-wings-combo.jpg';
+import phillyOnly from '@/assets/new/chicken-philly.jpeg';
+import phillyCombo from '@/assets/new/steak-pholly.jpeg';
+import phillyWingsCombo from '@/assets/new/shrimp-philly.jpeg';
 
 /* CHICKEN TENDERS */
 
-import tender2 from '@/assets/chicken-tender-2pcs.jpg';
+import tender2 from '@/assets/new/chiken-tenders.jpeg';
 import tender4 from '@/assets/chicken-tender-4pcs.jpg';
 import tender6 from '@/assets/chicken-tender-6pcs.jpg';
 
 /* BUTTERFLY SHRIMP */
 
-import butterflyShrimp6 from '@/assets/butterfly-shrimp-6pcs.jpg';
-import butterflyShrimp10 from '@/assets/butterfly-shrimp-10pcs.jpg';
+import butterflyShrimp6 from '@/assets/new/butterfly-shrimp.jpeg';
+import butterflyShrimp10 from '@/assets/new/butterfly-shrimp-combo.jpeg';
 
 /* DRINKS */
 
-import fruitPunch from '@/assets/fruit-punch.jpg';
-import peachDrink from '@/assets/peach-drink.jpg';
-import lemonade from '@/assets/lemonade.jpg';
+import fruitPunch from '@/assets/new/fruit-punch.jpeg';
+import peachDrink from '@/assets/new/peach-drink.jpeg';
+import lemonade from '@/assets/new/lemonade.jpeg';
 
 /* CAKE */
 
-import cheesecake from '@/assets/cheesecake.jpg';
+import cheesecake from '@/assets/new/cake.jpeg';
 
 
 
@@ -214,63 +214,6 @@ className="border border-primary/30 rounded-full px-4 py-3 text-center text-xs m
 
 }
 
-
-
-/* BOWLS SECTION */
-
-// const BowlsSection=({category}:{category:MenuCategory})=>{
-
-// const {ref,isVisible}=useScrollAnimation()
-
-// return(
-
-// <div ref={ref} className={`scroll-animate ${isVisible?'visible':''}`}>
-
-// <h3 className="text-primary font-heading font-extrabold text-xl md:text-2xl text-center mb-3">
-// {category.name}
-// </h3>
-
-// <p className="text-center text-muted-foreground text-sm uppercase mb-10">
-// Build Your Bowl
-// </p>
-
-// <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-2xl mx-auto">
-
-// {category.items.map(item=>(
-
-// <div key={item.name} className="menu-card group">
-
-// <div className="aspect-square overflow-hidden">
-
-// <img
-// src={proteinImages[item.name] || bowlImg}
-// alt={item.name}
-// className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-// />
-
-// </div>
-
-// <div className="p-3 text-center">
-
-// <h4 className="font-heading font-bold text-xs md:text-sm">{item.name}</h4>
-
-// <p className="text-primary font-bold text-xs md:text-sm">{item.price}</p>
-
-// </div>
-
-// </div>
-
-// ))}
-
-// </div>
-
-// </div>
-
-// )
-
-// }
-
-/* BOWLS SECTION */
 
 const BowlsSection = ({ category }: { category: MenuCategory }) => {
 
