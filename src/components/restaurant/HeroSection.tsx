@@ -26,7 +26,7 @@ const HeroSection = () => {
           Bold. Flavorful. Unforgettable.
         </p>
 <p className="font-heading font-bold text-primary text-xl md:text-2xl tracking-wider uppercase mb-4">
-           we offer party and catering.
+           we offer parties and catering.
         </p>
         <p className="text-gray-200 text-base md:text-lg mb-10 max-w-2xl mx-auto">
           Premium Wings, Seafood & Signature Bowls in Millbrook, Alabama.
