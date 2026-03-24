@@ -1,6 +1,6 @@
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import { menuCategories, type MenuCategory } from '@/data/menuData';
-import cornNuggets from '@/assets/corn-nuggets.jpg';
+import cornNuggets from '@/assets/new/corn-nuggets.jpeg';
 
 import wingsImg from '@/assets/wings.jpg';
 import burgerImg from '@/assets/burger.jpg';
