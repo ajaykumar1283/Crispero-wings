@@ -11,10 +11,10 @@ import friesImg from '@/assets/fries.jpg';
 
 /* BOWL IMAGES */
 
-import walkingTacoImg from '@/assets/walking-taco.jpg';
-import originalChickenImg from '@/assets/original-chicken.jpg';
-import friedChickenImg from '@/assets/fried-chicken.jpg';
-import beefImg from '@/assets/beef.jpg';
+import walkingTacoImg from '@/assets/new/walking-taco.jpeg';
+import originalChickenImg from '@/assets/new/chicken.jpeg';
+import friedChickenImg from '@/assets/new/fried-chicken.jpeg';
+import beefImg from '@/assets/new/beef.jpeg';
 
 /* SIDE ORDERS */
 
@@ -46,8 +46,8 @@ import phillyWingsCombo from '@/assets/new/shrimp-philly.jpeg';
 /* CHICKEN TENDERS */
 
 import tender2 from '@/assets/new/chiken-tenders.jpeg';
-import tender4 from '@/assets/chicken-tender-4pcs.jpg';
-import tender6 from '@/assets/chicken-tender-6pcs.jpg';
+import tender4 from '@/assets/new/chiken-tenders.jpeg';
+import tender6 from '@/assets/new/chiken-tenders.jpeg';
 
 /* BUTTERFLY SHRIMP */
 
