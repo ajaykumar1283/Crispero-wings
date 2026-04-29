@@ -52,7 +52,7 @@ export const menuCategories: MenuCategory[] = [
       { name: 'Honey Gold', price: '' },
       { name: 'Teriyaki', price: '' },
       { name: 'Sweet Chilli', price: '' },
-      { name: 'Mango Harabero', price: '' }
+      { name: 'Mango Harabero', price: '' },
     ],
   },
   // {
@@ -185,12 +185,7 @@ export const menuCategories: MenuCategory[] = [
       { name: 'Beef', price: '$12.99' },
       { name: 'Shrimp', price: '$12.99' },
     ],
-    extras: [
-      'Rice', 'Salad', 'Fries', 'Walking Taco',
-      'Cucumber', 'Tomato', 'Onion', 'Carrot',
-      'Cheese', 'Lettuce', 'Cilantro', 'Roasted Corn',
-      'White Cream', 'Spicy Cream'
-    ],
+    extras: ['Rice', 'Salad', 'Fries', 'Walking Taco'],
   },
   {
     id: 'jumbo-shrimp',
