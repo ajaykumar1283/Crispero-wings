@@ -262,7 +262,9 @@ const BowlsSection = ({ category }: { category: MenuCategory }) => {
       {/* STEP 4 SAUCE */}
       <h4 className="text-center font-bold mb-4">Step 4 — Sauce</h4>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-3xl mx-auto">
-        {category.extras?.slice(12).map((sauce) => (
+        {[
+          'White cream ', 'Spicy cream'
+        ].map((sauce) => (
           <div
             key={sauce}
             className="border border-primary/30 rounded-full px-4 py-3 text-center text-sm"
