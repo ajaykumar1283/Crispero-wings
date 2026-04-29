@@ -253,7 +253,7 @@ const BowlsSection = ({ category }: { category: MenuCategory }) => {
       <h4 className="text-center font-bold mb-4">Step 4 — Sauce</h4>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-3xl mx-auto">
         {[
-          'Ranch', 'Honey Mustard', 'BBQ', 'Hot Sauce', 'Teriyaki', 'Spicy Mayo',
+          'White cream ', 'Spicy cream'
         ].map((sauce) => (
           <div
             key={sauce}
