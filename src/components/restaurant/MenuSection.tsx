@@ -93,12 +93,14 @@ const itemImages: Record<string, string> = {
 
   /* FRIED RICE */
   'Veggie Fried Rice': veggieFriedRice,
+  'Vegie Fried Rice': veggieFriedRice,
   'Egg Fried Rice': eggFriedRice,
   'Chicken Fried Rice': chickenFriedRice,
   'Beef Fried Rice': beefFriedRice,
   'Shrimp Fried Rice': shrimpFriedRice,
 
   'Veggie SM | LG': veggieFriedRice,
+  'Vegie SM | LG': veggieFriedRice,
   'Egg SM | LG': eggFriedRice,
   'Chicken SM | LG': chickenFriedRice,
   'Beef SM | LG': beefFriedRice,
@@ -106,6 +108,7 @@ const itemImages: Record<string, string> = {
   'Crispero Special Mix Meat SM | LG': mixFriedRice,
 
   'Veggie': veggieFriedRice,
+  'Vegie': veggieFriedRice,
   'Egg': eggFriedRice,
   'Chicken': chickenFriedRice,
   'Beef': beefFriedRice,
@@ -287,10 +290,10 @@ const CategorySection = ({ category }: { category: MenuCategory }) => {
                   category.id === 'chicken-tender'
                     ? tenderImg
                     : category.id === 'butterfly-shrimp'
-                    ? item.name.includes('Combo')
-                      ? butterflyShrimpCombo
-                      : butterflyShrimp
-                    : itemImages[item.name] || image
+                      ? item.name.includes('Combo')
+                        ? butterflyShrimpCombo
+                        : butterflyShrimp
+                      : itemImages[item.name] || image
                 }
                 alt={item.name}
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
