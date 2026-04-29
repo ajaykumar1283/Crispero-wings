@@ -80,7 +80,7 @@ export const menuCategories: MenuCategory[] = [
       { name: 'Bacon Cheese Fries', price: '+$3.99' },
       { name: 'Fried Okra', price: '+$1.99' },
       { name: 'Onion Ring', price: '+$1.99' },
-      { name: 'Vegie Fried Rice', price: '+$2.45' },
+      { name: 'Veggie Fried Rice', price: '+$2.45' },
       { name: 'Egg Fried Rice', price: '+$2.99' },
       { name: 'Chicken Fried Rice', price: '+$3.99' },
       { name: 'Beef Fried Rice', price: '+$4.99' },
