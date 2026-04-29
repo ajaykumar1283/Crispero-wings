@@ -8,6 +8,8 @@ import fishImg from '@/assets/new/fried-fish.jpeg';
 import shrimpImg from '@/assets/new/jumbo-shrimp.jpeg';
 import bowlImg from '@/assets/bowl.jpg';
 import friesImg from '@/assets/fries.jpg';
+import shrimp10pcs from '@/assets/butterfly-shrimp-10pcs.jpg';
+
 
 /* BOWL IMAGES */
 import walkingTacoImg from '@/assets/new/walking-taco.jpeg';
@@ -23,6 +25,8 @@ import onionRings from '@/assets/new/onion-rings.jpeg';
 import mozzarellaSticks from '@/assets/new/mozzarella-sticks.jpg';
 import jalapenoPoppers from '@/assets/new/jalapeno-poppers.jpg';
 import cornNuggets from '@/assets/new/corn-nuggets.jpeg';
+import cajunRanchFries from '@/assets/new/Cajun-Ranch-Fries.jpg';
+
 
 /* FRIED RICE */
 import veggieFriedRice from '@/assets/new/veg-fried-rice.jpeg';
@@ -86,7 +90,10 @@ const itemImages: Record<string, string> = {
   'Corn Nuggets (x10)': cornNuggets,
   'Cheese Fries': cheeseFries,
   'Bacon Cheese Fries': baconCheeseFries,
+  'Cajun Ranch Fries': cajunRanchFries,
+  'Cajun Ranch Fries SM | LM': cajunRanchFries,
   'Fried Okra': friedOkra,
+
   'Onion Ring': onionRings,
   'Mozzarella Sticks [X6]': mozzarellaSticks,
   'Jalapeno Poppers [X6]': jalapenoPoppers,
@@ -124,9 +131,9 @@ const itemImages: Record<string, string> = {
   'Steak Philly | Steak Philly + Combo | Steak Philly + 5 wings': phillyCombo,
   'Shrimp Philly | Shrimp Philly + Combo | Shrimp Philly + 5 wings': phillyWingsCombo,
 
-  /* BUTTERFLY SHRIMP */
+  /* BUTTERFLY SHRIMP / JUMBO SHRIMP */
   '6 pcs | 6 pcs + Combo': butterflyShrimp,
-  '10 pcs | 10 pcs + Combo': butterflyShrimp,
+  '10 pcs | 10 pcs + Combo': shrimp10pcs,
 
   /* DRINKS */
   'Fruit Punch SM | LG': fruitPunch,
@@ -137,6 +144,8 @@ const itemImages: Record<string, string> = {
   'Homemade Cake': cheesecake,
   'New York Style Cheese Cake': cheesecake,
   'Lemon Cheese Cake': cheesecake,
+
+
 };
 
 /* BASE IMAGES */
@@ -197,7 +206,7 @@ const BowlsSection = ({ category }: { category: MenuCategory }) => {
       {/* STEP 1 BASE */}
       <h4 className="text-center font-bold mb-4">Step 1 — Choose Your Base</h4>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto mb-10">
-        {category.extras?.map((base) => (
+        {category.extras?.slice(0, 4).map((base) => (
           <div key={base} className="menu-card group">
             <div className="aspect-square overflow-hidden">
               <img
@@ -237,9 +246,7 @@ const BowlsSection = ({ category }: { category: MenuCategory }) => {
       {/* STEP 3 TOPPINGS */}
       <h4 className="text-center font-bold mb-4">Step 3 — Toppings</h4>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-3xl mx-auto mb-12">
-        {[
-          'Cucumber', 'Tomato', 'Onion', 'Carrot', 'Cheese', 'Lettuce', 'Cilantro', 'Smoky Corn',
-        ].map((top) => (
+        {category.extras?.slice(4, 12).map((top) => (
           <div
             key={top}
             className="border border-primary/30 rounded-full px-4 py-3 text-center text-sm"
@@ -252,9 +259,7 @@ const BowlsSection = ({ category }: { category: MenuCategory }) => {
       {/* STEP 4 SAUCE */}
       <h4 className="text-center font-bold mb-4">Step 4 — Sauce</h4>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-3xl mx-auto">
-        {[
-          'White cream ', 'Spicy cream'
-        ].map((sauce) => (
+        {category.extras?.slice(12).map((sauce) => (
           <div
             key={sauce}
             className="border border-primary/30 rounded-full px-4 py-3 text-center text-sm"
