@@ -52,7 +52,7 @@ export const menuCategories: MenuCategory[] = [
       { name: 'Honey Gold', price: '' },
       { name: 'Teriyaki', price: '' },
       { name: 'Sweet Chilli', price: '' },
-      { name: 'Mango Habanero', price: '' }
+      { name: 'Mango Harabero', price: '' }
     ],
   },
   // {
