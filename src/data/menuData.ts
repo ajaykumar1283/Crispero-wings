@@ -139,7 +139,10 @@ export const menuCategories: MenuCategory[] = [
     name: 'Philly',
     type: 'cards',
     items: [
-      { name: 'Philly Only | Philly Combo | Philly Combo + 5 wings', price: '$7.99 | $10.49 | $15.99' },
+      { name: 'Chicken Philly | Chicken Philly + Combo | Chicken Philly + 5 wings', price: '$7.99 | $10.49 | $15.99' },
+      { name: 'Steak Philly | Steak Philly + Combo | Steak Philly + 5 wings', price: '$7.99 | $10.49 | $15.99' },
+      { name: 'Shrimp Philly | Shrimp Philly + Combo | Shrimp Philly + 5 wings', price: '$7.99 | $10.49 | $15.99' },
+
     ],
   },
   {
