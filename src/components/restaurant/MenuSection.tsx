@@ -131,9 +131,9 @@ const itemImages: Record<string, string> = {
   'Steak Philly | Steak Philly + Combo | Steak Philly + 5 wings': phillyCombo,
   'Shrimp Philly | Shrimp Philly + Combo | Shrimp Philly + 5 wings': phillyWingsCombo,
 
-  /* BUTTERFLY SHRIMP / JUMBO SHRIMP */
+  /* BUTTERFLY SHRIMP */
   '6 pcs | 6 pcs + Combo': butterflyShrimp,
-  '10 pcs | 10 pcs + Combo': shrimp10pcs,
+  '10 pcs | 10 pcs + Combo': butterflyShrimp,
 
   /* DRINKS */
   'Fruit Punch SM | LG': fruitPunch,
@@ -145,7 +145,8 @@ const itemImages: Record<string, string> = {
   'New York Style Cheese Cake': cheesecake,
   'Lemon Cheese Cake': cheesecake,
 
-
+  /* JUMBO SHRIMP / BUTTERFLY SHRIMP */
+  '10 pcs | 10 pcs + Combo': shrimp10pcs,
 };
 
 /* BASE IMAGES */
@@ -246,7 +247,9 @@ const BowlsSection = ({ category }: { category: MenuCategory }) => {
       {/* STEP 3 TOPPINGS */}
       <h4 className="text-center font-bold mb-4">Step 3 — Toppings</h4>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-3xl mx-auto mb-12">
-        {category.extras?.slice(4, 12).map((top) => (
+        {[
+          'Cucumber', 'Tomato', 'Onion', 'Carrot', 'Cheese', 'Lettuce', 'Cilantro', 'Smoky Corn',
+        ].map((top) => (
           <div
             key={top}
             className="border border-primary/30 rounded-full px-4 py-3 text-center text-sm"
