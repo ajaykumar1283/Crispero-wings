@@ -363,7 +363,7 @@ import fishImg from '@/assets/new/fried-fish.jpeg';
 import shrimpImg from '@/assets/new/jumbo-shrimp.jpeg';
 import bowlImg from '@/assets/bowl.jpg';
 import friesImg from '@/assets/fries.jpg';
-import shrimp10pcs from '@/assets/new/butterfly-shrimp.jpeg';
+import shrimp10pcs from '@/assets/new/jumbo-shrimp.jpeg';
 
 
 /* BOWL IMAGES */
@@ -703,4 +703,3 @@ const MenuSection = () => {
 };
 
 export default MenuSection;
-
