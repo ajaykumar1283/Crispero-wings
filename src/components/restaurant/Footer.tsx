@@ -1,5 +1,3 @@
-
-
 import { Instagram, Facebook } from "lucide-react";
 import { FaTiktok } from "react-icons/fa";
 import logo from "../../assets/logo.png";
@@ -101,7 +99,7 @@ const Footer = () => {
                   href="tel:3349124151"
                   className="hover:text-primary transition-colors"
                 >
-                  (334) 912-4151
+                  +1 (334) 895-2742
                 </a>
               </p>
 
@@ -120,8 +118,8 @@ const Footer = () => {
               <p className="text-primary font-semibold uppercase text-xs tracking-wider">
                 Business Hours
               </p>
-              <p>Monday – Thursday: 10 AM – 10 PM</p>
-              <p>Friday – Saturday: 10 AM – 10 PM</p>
+              <p>Monday – Thursday: 11 AM – 10 PM</p>
+              <p>Friday – Saturday: 11 AM – 10 PM</p>
             </div>
 
           </div>
