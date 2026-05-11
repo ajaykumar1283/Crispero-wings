@@ -120,8 +120,8 @@ const Footer = () => {
               <p className="text-primary font-semibold uppercase text-xs tracking-wider">
                 Business Hours
               </p>
-              <p>Monday – Thursday: 10 AM – 10 PM</p>
-              <p>Friday – Sunday: 10 AM – 10 PM</p>
+              <p>Monday – Thursday: 11 AM – 10 PM</p>
+              <p>Friday – Sunday: 11 AM – 10 PM</p>
             </div>
 
           </div>
