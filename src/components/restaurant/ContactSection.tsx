@@ -52,7 +52,7 @@ const ContactSection = () => {
                 <h4 className="font-heading font-bold text-foreground text-sm uppercase tracking-wider mb-1">Business Hours</h4>
                 <p className="font-body text-muted-foreground text-sm">
                   Mon–Fri: 11AM – 10PM<br />
-                  Sat–Sun: 11AM – 12PM
+                  Sat–Sun: 11AM – 10PM
                 </p>
               </div>
             </div>
